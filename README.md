@@ -81,7 +81,7 @@ To run the agent simply follow the instructions in each cell to download depende
 
 Implementation of a single agent can be found in file `agent.py` along with hyperparameters and Replay Buffer function. 
 
-Agents are ran for training simultaniuously using same model and common memory but separate Actor and Critic Q values from `maddgp.py` file 
+Agents are ran for training simultaniuously using the same model for both Actor and Critic and share common memory bank but keep track of their training weights separately through `maddgp.py` file. These commands for multi agent call on methods defined for single agent in `agent.py`.
 
 Actor and Critic models can be found in file `model.py`.
 
